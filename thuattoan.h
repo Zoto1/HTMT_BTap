@@ -7,3 +7,6 @@ pair<string, char> Add_8bits_Binary(string a, string b);
 string Sub_8bits_Binary(string a, string b);
 string Convert_To_2s_Complement(string a);
 string Mul_8bits_Binary(string a, string b);
+pair<string, string> Div_8bits_Binary(string a, string b);
+//===================================Second part========================================
+void Analyze_Float(float x);

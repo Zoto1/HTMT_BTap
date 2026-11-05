@@ -193,7 +193,23 @@ int main() {
         Mul_8bits_Binary("00000001", "11111111"),
         "0000000011111111"
     );
+    Check(
+    "Divide 1 by 1",
+    Div_8bits_Binary("00000001", "00000001").second,
+    "00000001"
+);
 
+Check(
+    "Divide 30 by 5",
+    Div_8bits_Binary("00011110", "00000101").second,
+    "00000110"
+);
+
+Check(
+    "Divide 255 by 2",
+    Div_8bits_Binary("11111111", "00000010").second,
+    "01111111"
+);
     cout << "\n===== KET QUA =====\n";
     cout << "Passed: " << passed << '\n';
     cout << "Failed: " << failed << '\n';
